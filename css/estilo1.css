@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+
+body{
+    background-color: #111111;
+    color: #E1E2E2;
+    font-family: 'Montserrat';
+}
+
+nav{
+    border-bottom: 2px solid #E1E2E2;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    padding: 2vh 4vw;
+}
+
+nav img{
+    height: 3vh;
+    width: auto;
+
+}
+
+a{
+    color: #E1E2E2;
+    font-size: 0.5em;
+    display: flex;
+    justify-content: end;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6vh 0;
+}
+
+#iniciar_sesion, #registrarse{
+    height: 80vh;
+    width: 35vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div form{
+    display: flex;
+    flex-direction: column;
+}
+
+.forgot{
+    width: 16vw;
+}
+
+input, button{
+    border-radius: 16px;
+    padding: 1vh 1vw;
+}
+
+input{
+    background-color: #313131;
+    color: #E1E2E2;
+    border: 2px solid #E1E2E2;
+    width: 16vw;
+}
+
+button{
+    font-weight: bold;
+    width: 16vw;
+}
+
+button:hover{
+    border-radius: solid 2px #e1e2e2;
+    background-color: #111111;
+    color: #E1E2E2;
+}
+
+#iniciar_sesion{
+    border-right: 1px solid #E1E2E2;
+}
+
+#registrarse{
+    border-left: 1px solid #E1E2E2;
+}
+
+
+@media (max-width: 600px) {
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    
+}

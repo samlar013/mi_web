@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #111111;
+
+}
+header{
+    background-image: url("../imagenes/sabrina_espejo.JPG");
+
+    background-size: cover;
+    height: 50vh;
+    background-position:0 28%;
+    color:#E2E1E1;
+    text-align: center;
+    /* filter: hue-rotate(25deg) saturate(90%)    ; */
+    /* filter: sepia(0.5) hue-rotate(-10deg) saturate(1.4); */
+    display: flex;
+    flex-direction: column;
+}
+.logo_img{
+    display: flex;
+    justify-content: space-between;
+
+}
+.title{
+    display: flex;
+    justify-content: center;
+    padding-top: 31vh;
+    font-size: 2em;
+    color: #37616b;
+
+}
+header img{
+    height: 6vh;
+    width: auto;
+    padding: 2vh 2vw;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+
+}
+nav img{
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+}
+.lupa img{
+    height: 2vh;
+    padding: 0 0.4vw;
+}
+.lupa{
+    display: flex;
+    justify-content: space-between  ;
+
+}
+.iconos{
+    width: 1%;
+}
+nav a{
+    width: 12%;
+    border: 2px solid #E2E1E1;
+    padding: 2vh 2vw;
+    color: #E2E1E1;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    color: #E2E1E1;
+     padding: 7vh 7vw;
+}
+main a {
+    color: #E2E1E1;
+}
+main{
+    color: #E2E1E1;
+    padding: 7vh 5vw;
+}
+
+#sabrina{
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.imagenes, .house{
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+article{
+    width:20%;
+    border: 1px solid #E2E1E1 ;
+}
+article img{
+
+
+    /* width: auto; */
+    height: 15vh;
+}
+article>div{
+    height: 8vh;
+    padding: 10px;
+    text-align: left;
+    border-top: 1px solid #E2E1E1;
+}
+.house img{
+width: auto;
+height: 110%;
+}
+@media (max-width: 600px) {
+     header{
+        height: 20vh;
+    }
+
+    header img{
+        height: 8vh;
+    }
+
+    nav{
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        height: auto;
+        padding: 1.5vh 0;
+        width: 50%;
+        border-width: 2px 1px;
+        box-sizing: border-box;
+    }
+    .lupa{
+        width: 100%;
+    }
+
+    .iconos{
+        width: 50%;
+    }
+    .title {
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 0em;
+    }
+     #contenido {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+    }
+     article img {
+        height: auto;
+        width: 90%;
+        object-fit: contain;
+    }
+   
+    #sabrina article {
+        height: auto; 
+        width: 40%; 
+       
+    }
+
+
+}

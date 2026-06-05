@@ -1,0 +1,220 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+
+
+body{
+    background-color: #111111;
+    color: #E2E1E1;
+    font-family: 'Montserrat';
+}
+
+header{
+    height: 50vh;
+    background-image: url("../imagenes/Home/fondo_1.jpg");
+    background-size: cover;
+    background-position: 0 28%;
+    filter: sepia(0.5) hue-rotate(-10deg) saturate(1.4);
+    display: flex;
+    justify-content: space-between;
+}
+
+header img{
+    height: 12vh;
+    width: auto;
+    padding: 2vh 2vw;
+}
+
+nav{
+    height: 6vh;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #111111;
+}
+
+nav a{
+    width: 12%;
+    border: 2px solid #E2E1E1;
+    padding: 2vh 2vw;
+    color: #E2E1E1;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a:hover{
+    
+    font-weight: bold;
+}
+
+
+
+nav img{
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+}
+
+.lupa{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.lupa img{
+    height: 2vh;
+}
+section{
+    padding-bottom: 8vh;
+}
+
+#contenido_artistas article, #contenido_productos article, #contenido_generos article{
+    border: 2px solid #E1E2E2;
+    border-width: 2px 1px;
+}
+
+.imagen{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contenido_artistas img, #contenido_generos img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#contenido_productos img{
+    width: 90%;
+    height: auto;
+}
+
+
+.contenido, .contenido_2{
+    border-top: 2px solid #E1E2E2;
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1vh 1vw;
+}
+
+.contenido_2{
+    font-size: 2em;
+}
+
+.contenido a, .contenido_2 a{
+    color: #E1E2E2;
+    font-size: 1.5em;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.contenido a:hover, .contenido_2 a:hover{
+    background-color: #E1E2E2;
+    color: #111111;
+}
+
+.titulo{
+    padding: 2vh 0;
+}
+
+h2, h4{
+    font-weight: bold;
+}
+
+.precio{
+    text-align: end;
+}
+
+.sabrina{
+    height: 80%;
+}
+
+
+#contenido_artistas, #contenido_productos, #contenido_generos{
+    height: 104vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+}
+
+.caja0{
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+}
+
+#contenido_artistas h4, #contenido_generos h4{
+    text-align: center;
+}
+#artistas, #productos, #generos{
+    padding: 0 5vw;
+}
+.contenido:hover, .contenido_2:hover{
+    background-color: #E1E2E2;
+    color: #111111;
+}
+
+@media (max-width: 600px) {
+     header{
+        height: 20vh;
+    }
+
+    header img{
+        height: 8vh;
+    }
+
+    nav{
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    nav a{
+        height: 2vh;
+        width: 50%;
+        border-width: 2px 1px;
+    }
+
+    .lupa{
+        width: 100%;
+    }
+
+    .iconos{
+        width: 25%;
+    }
+     #contenido_artistas, #contenido_productos, #contenido_generos{
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+    }
+
+    section article{
+        height: 27vh;
+        width: 50%;
+    }
+
+    .caja0{
+        height: 54vh;
+        width: 100%;
+    }
+    .titulo{
+     
+        font-size: 10px;
+    }
+}

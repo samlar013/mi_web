@@ -1,0 +1,257 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+
+
+body{
+    background-color: #111111;
+    color: #E2E1E1;
+    font-family: 'Montserrat';
+}
+
+header{
+    height: 50vh;
+    background-image: url("../imagenes/Home/fondo_1.jpg");
+    background-size: cover;
+    background-position: 0 28%;
+    filter: sepia(0.5) hue-rotate(-10deg) saturate(1.4);
+    display: flex;
+    justify-content: space-between;
+}
+
+header img{
+    height: 12vh;
+    width: auto;
+    padding: 2vh 2vw;
+}
+
+nav{
+    height: 6vh;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #111111;
+}
+
+nav a{
+    width: 12%;
+    border: 2px solid #E2E1E1;
+    padding: 2vh 2vw;
+    color: #E2E1E1;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a:hover{
+    
+    font-weight: bold;
+}
+
+
+
+nav img{
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+}
+
+.lupa{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.lupa img{
+    height: 2vh;
+}
+section{
+    font-size: 1.3em;
+    padding: 0 5vw;
+}
+#texto{
+    text-align: center;
+}
+
+
+#productos article{
+    height: 60vh;
+    border: 2px solid #E1E2E2;
+    display: flex;
+    flex-direction: row;
+    margin: 5vh 0;
+}
+.contenido1{
+    width: 60%;
+    border-left: 2px solid #E1E2E2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 8vh 8vw;
+}
+
+.c_imagen{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c_imagen a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen1{
+    width: 100%;
+    height: auto;
+}
+
+.imagen2{
+    width: 90%;
+    height: auto;
+}
+
+h1, h3{
+    font-weight: bold;
+}
+
+h1{
+    font-size: 3em;
+}
+
+.añadir{
+    width: 20%;
+    border: 1px solid #E1E2E2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+p{
+    padding: 1vh 1vw;
+}
+
+a{
+    text-decoration: none;
+    color: #E1E2E2;
+}
+
+.añadir button{
+    background: none;
+    color: #E1E2E2;
+    width: 100%;
+}
+
+.total{
+    display: flex;
+    flex-direction: column;
+}
+
+.total button{
+    height: 5vh;
+    width: 12vw;
+    background: #E1E2E2;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.pago{
+    padding: 5vh 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.boton{
+    display: flex;
+    justify-content: end;
+}
+
+.boton button:hover{
+    border: 1px solid #E1E2E2;
+    background-color: #111111;
+    color: #E1E2E2;
+}
+
+@media (max-width: 600px) {
+     header{
+        height: 20vh;
+    }
+
+    header img{
+        height: 8vh;
+    }
+
+    nav{
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        height: auto; 
+        padding: 1.5vh 0;
+        width: 50%;
+        border-width: 2px 1px;
+        box-sizing: border-box;
+    }
+
+
+    .lupa{
+        width: 100%;
+    }
+
+    .iconos{
+        width: 25%;
+    }
+   
+
+    .añadir {
+        width: 50%; 
+        height: 4vh;
+    }
+
+        #productos article {
+        flex-direction: column; 
+        height: auto; 
+        margin: 3vh 0;
+    }
+    .c_imagen {
+        width: 100%;
+        height: 250px;
+        padding: 2vh 0;
+    }
+     .c_imagen img {
+      
+        object-fit: contain; 
+    }
+    .contenido1 {
+        width: 100%;
+        height: auto; 
+        border-left: 0px solid #E1E2E2;
+        border-top: 2px solid #E1E2E2;
+        padding: 3vh 4vw; 
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        
+    }
+    .boton button {
+        width: 100%; 
+    }
+    h1 {
+        font-size: 2em; 
+    }
+
+
+}
